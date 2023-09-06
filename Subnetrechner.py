@@ -81,7 +81,7 @@ if __name__ == "__main__":
                 subnet_mask = str("128.0.0.0")
             elif subnet_mask == 0:
                 subnet_mask = str("0.0.0.0")
-        network, broadcast = calculate_subnet(ip_address, subnet_mask)
+        network, broadcast = berechne_subnet(ip_address, subnet_mask)
         print(f"Netzwerkadresse: {network}")
         print(f"Broadcast-Adresse: {broadcast}")
         repeat = input("Möchten Sie noch eine Subnettierung duchrführen? Ja/Nein: ").lower()
